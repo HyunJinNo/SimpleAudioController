@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="80dp"
-    android:background="#039BE5">
+    android:backgroundTintMode="src_in">
 
     <ImageView
         android:id="@+id/backwardButton"
@@ -13,12 +13,12 @@
         android:layout_marginTop="8dp"
         android:clickable="true"
         android:focusable="true"
-        app:tint="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/playButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baseline_fast_rewind_24" />
+        app:srcCompat="@drawable/baseline_fast_rewind_24"
+        app:tint="@color/white" />
 
     <ImageView
         android:id="@+id/playButton"
@@ -27,12 +27,12 @@
         android:layout_marginTop="8dp"
         android:clickable="true"
         android:focusable="true"
-        app:tint="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/forwardButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/backwardButton"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baseline_play_arrow_24" />
+        app:srcCompat="@drawable/baseline_play_arrow_24"
+        app:tint="@color/white" />
 
     <ImageView
         android:id="@+id/forwardButton"
@@ -41,11 +41,11 @@
         android:layout_marginTop="8dp"
         android:clickable="true"
         android:focusable="true"
-        app:tint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/playButton"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baseline_fast_forward_24" />
+        app:srcCompat="@drawable/baseline_fast_forward_24"
+        app:tint="@color/white" />
 
     <TextView
         android:id="@+id/timeStamp1"
@@ -63,7 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:text="12:34:56"
+        android:text="00:00:00"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

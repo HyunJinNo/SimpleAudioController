@@ -1,6 +1,7 @@
 package com.example.audiocontrollerlibrary
 
 import android.content.Context
+import android.graphics.Color
 import android.media.MediaMetadataRetriever
 import android.media.MediaPlayer
 import android.net.Uri
@@ -36,9 +37,10 @@ class AudioController @JvmOverloads constructor(
         super.onFinishInflate()
         binding = AudiocontrollerBinding.bind(this)
 
+        setLayoutBackgroundColor(Color.rgb(3, 155, 229))
         initListeners()
     }
-    
+
     private fun initListeners() {
         AudioPlayer.listener = MediaPlayer.OnPreparedListener {
             val mmr = MediaMetadataRetriever().apply {
@@ -102,5 +104,14 @@ class AudioController @JvmOverloads constructor(
 
     fun setAudioSource(filepath: String) {
         AudioPlayer.ready(filepath)
+    }
+
+    fun setLayoutBackgroundColor(color: Int) {
+        binding.root.setBackgroundColor(color)
+    }
+
+    fun setTextColor(color: Int) {
+        binding.timeStamp1.setTextColor(color)
+        binding.timeStamp2.setTextColor(color)
     }
 }
