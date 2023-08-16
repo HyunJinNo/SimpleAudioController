@@ -44,6 +44,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
+// Because the components are created only during the afterEvaluate phase, you must
+// configure your publications using the afterEvaluate() lifecycle method.
 afterEvaluate {
     publishing {
         publications {
@@ -55,6 +57,15 @@ afterEvaluate {
                 // You can customize attributes of the publication.
                 groupId = 'com.github.HyunJinNo'
                 artifactId = ''
+                version = '1.0.0'
+            }
+            // Creates a Maven publication called "debug"
+            debug(MavenPublication) {
+                // Applies the component for the debug bulid variant.
+                from components.debug
+
+                groupId = 'com.github.HyunJinNo'
+                artifactId = 'final-debug'
                 version = '1.0.0'
             }
         }
