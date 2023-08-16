@@ -102,16 +102,27 @@ class AudioController @JvmOverloads constructor(
         return "%02d:%02d:%02d".format(hour, minute, second)
     }
 
+    /**
+     * Sets the audio file to play.
+     */
     fun setAudioSource(filepath: String) {
         AudioPlayer.ready(filepath)
     }
 
+    /**
+     * Sets the background color for the layout.
+     */
     fun setLayoutBackgroundColor(color: Int) {
         binding.root.setBackgroundColor(color)
     }
 
+    /*
+    /**
+     * Sets the text color for the timestamps.
+     */
     fun setTextColor(color: Int) {
         binding.timeStamp1.setTextColor(color)
         binding.timeStamp2.setTextColor(color)
     }
+    */
 }
