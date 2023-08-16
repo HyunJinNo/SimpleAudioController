@@ -2,9 +2,23 @@
 
 [![](https://jitpack.io/v/HyunJinNo/SimpleAudioController.svg)](https://jitpack.io/#HyunJinNo/SimpleAudioController)
 
+
+## Index
+
+[1. Examples](#examples)
+
+[2. Gradle Setup](#gradle-setup)
+
+[3. How to use](#how-to-use)
+
+<br/>
+
 ## Examples
 
+<img src="screenshots/Screenshot2.png" height="200"/> <img src="screenshots/Screenshot3.png" height="200"/>
+<img src="screenshots/Screenshot1.png" height="200"/> 
 
+<br/>
 
 ## Gradle Setup
 
@@ -31,6 +45,8 @@ dependencies {
     implementation 'com.github.HyunJinNo:SimpleAudioController:0.0.1'
 }
 ```
+
+<br/>
 
 ## How to use
 
