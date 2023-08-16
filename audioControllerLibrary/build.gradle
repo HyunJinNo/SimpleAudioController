@@ -44,4 +44,19 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
-group='com.github.HyunJinNo'
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release"
+            release(MavenPublication) {
+                // Applies the component for the release build variant.
+                from components.release
+
+                // You can customize attributes of the publication.
+                groupId = 'com.github.HyunJinNo'
+                artifactId = ''
+                version = '1.0.0'
+            }
+        }
+    }
+}
