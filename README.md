@@ -2,6 +2,7 @@
 
 [![](https://jitpack.io/v/HyunJinNo/SimpleAudioController.svg)](https://jitpack.io/#HyunJinNo/SimpleAudioController)
 
+<br/>
 
 ## Index
 
@@ -66,7 +67,6 @@ dependencies {
 #### Step 2. Request the permission before playing audio file.
 
 ```
-
 class MainActivity : AppCompatActivity() {
     private var permissions: Array<String> = arrayOf(
         Manifest.permission.READ_EXTERNAL_STORAGE
