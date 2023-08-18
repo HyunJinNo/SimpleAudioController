@@ -1,5 +1,7 @@
 # SimpleAudioController
 
+A simple audio controller for android application.
+
 [![](https://jitpack.io/v/HyunJinNo/SimpleAudioController.svg)](https://jitpack.io/#HyunJinNo/SimpleAudioController)
 
 <br/>
