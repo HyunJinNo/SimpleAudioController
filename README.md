@@ -31,7 +31,7 @@ To get this library into your build:
 
 Add it in your settings.gradle at the end of repositories:
 
-```
+```gradle
 repositories {
     ...
     maven { url 'https://jitpack.io' }
@@ -42,7 +42,7 @@ repositories {
 
 Add it in your build.gradle (:app):
 
-```
+```gradle
 dependencies {
     ...
     implementation 'com.github.HyunJinNo:SimpleAudioController:0.0.1'
@@ -55,7 +55,7 @@ dependencies {
 
 #### Step 1. Add the following permission to your AndroidManifest.xml.
 
-```
+```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -68,7 +68,7 @@ dependencies {
 
 #### Step 2. Request the permission before playing audio file.
 
-```
+```kotlin
 class MainActivity : AppCompatActivity() {
     private var permissions: Array<String> = arrayOf(
         Manifest.permission.READ_EXTERNAL_STORAGE
@@ -105,7 +105,7 @@ class MainActivity : AppCompatActivity() {
 
 #### Step 3. Add SimpleAudioController to your xml file.
 
-```
+```xml
     <view
         android:id="@+id/audioController"
         class="com.example.audiocontrollerlibrary.AudioController"
@@ -120,7 +120,7 @@ class MainActivity : AppCompatActivity() {
 
 This setAudioSource(filepath) method works properly only after the permission granted.
 
-```
+```kotlin
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
